@@ -3,9 +3,8 @@ const path = require('path')
 
 /** @type {import('next').NextConfig} */
 
-// Remove this if you're not using Fullcalendar features
-
 module.exports = {
+  basePath: '/nextjs', // Added basePath
   trailingSlash: true,
   reactStrictMode: false,
   webpack: config => {
